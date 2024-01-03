@@ -131,7 +131,7 @@ fetch("https://api.clarifai.com/v2/models/" + MODEL_ID + "/versions/" + MODEL_VE
 
     .then(result => {
       if(result){
-        fetch('http://localhost:3000/image', {
+        fetch('https://smart-brain-api-rg7n.onrender.com/image', {
           method: 'put',
           headers: {'Content-Type': 'application/json'},
           body: JSON.stringify({
